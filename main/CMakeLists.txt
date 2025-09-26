@@ -2,7 +2,8 @@
 
 set(SOURCE_FILES_LIST
     "main.cpp"
-    "Application/EspNow/EspNow.cpp"
+    "lib/espnow/EspNow.cpp"
+    "lib/ftp/FtpServer.cpp"
     "lib/nvs/NvsStorage.cpp"
     "lib/system/DateTime.cpp"
     "lib/system/TimeSpan.cpp"
@@ -12,9 +13,10 @@ set(INCLUDE_DIRS_LIST
     .
     "Application"
     "lib"
-    "Application/EspNow"
-    "Application/Hardware"
     "lib/common"
+    "lib/drivers"
+    "lib/espnow"
+    "lib/ftp"
     "lib/json"
     "lib/nvs"
     "lib/rtos"
