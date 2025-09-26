@@ -98,7 +98,7 @@ private:
 
     struct CommandRoute
     {
-        char commandId[EspNow::CommandSize + 1];
+        char commandId[EspNow::COMMAND_SIZE + 1];
         MatchFlags flags;
         void (EspNowManager::*handler)(const EspNow::Package &package);
     };
@@ -122,7 +122,7 @@ private:
         LOCK(mutex);
         for (auto &entry : commandRoutes)
         {
-            if (strncmp(package.commandId, entry.commandId, EspNow::CommandSize) == 0)
+            if (strncmp(package.commandId, entry.commandId, EspNow::COMMAND_SIZE) == 0)
             {
                 if (matchesFlags(package, entry.flags))
                 {
