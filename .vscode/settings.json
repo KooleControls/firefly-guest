@@ -10,7 +10,7 @@
     "IDF_TARGET": "esp32c3"
   },
   "idf.flashType": "UART",
-  "idf.portWin": "COM9",
+  "idf.portWin": "COM5",
   "files.associations": {
     "array": "cpp",
     "chrono": "cpp",
@@ -30,6 +30,7 @@
     "xutility": "cpp",
     "string": "cpp",
     "string_view": "cpp",
-    "format": "cpp"
+    "format": "cpp",
+    "cassert": "cpp"
   }
 }

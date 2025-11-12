@@ -2,6 +2,7 @@
 
 set(SOURCE_FILES_LIST
     "main.cpp"
+    "lib/display/SSD1306.cpp"
     "lib/espnow/EspNow.cpp"
     "lib/ftp/FtpServer.cpp"
     "lib/nvs/NvsStorage.cpp"
@@ -11,9 +12,9 @@ set(SOURCE_FILES_LIST
 
 set(INCLUDE_DIRS_LIST
     .
-    "Application"
     "lib"
     "lib/common"
+    "lib/display"
     "lib/drivers"
     "lib/espnow"
     "lib/ftp"
@@ -22,6 +23,7 @@ set(INCLUDE_DIRS_LIST
     "lib/rtos"
     "lib/stream"
     "lib/system"
+    "lib/display/Fonts"
 )
 
 
